@@ -20,7 +20,7 @@ function encode(rotor,stcode,input){
     let rotor_ii=[23, 8, 14, 17, 25, 2, 15, 11, 22, 16, 10, 9, 12, 21, 3, 19, 6, 13, 5, 4, 18, 1, 24, 20, 7, 0];
     let rotor_iii=[3, 19, 13, 24, 20, 15, 10, 18, 12, 7, 17, 8, 22, 23, 21, 6, 14, 4, 5, 0, 11, 1, 16, 2, 25, 9];
     const rotor_box=[rotor_i,rotor_ii,rotor_iii];
-    let reflector=[15, 20, 25, 19, 24, 18, 22, 13, 16, 21, 23, 14, 17, 7, 11, 3, 8, 12, 5, 0, 1, 9, 6, 10, 4, 2];
+    let reflector=[19, 20, 25, 15, 24, 18, 22, 13, 16, 21, 23, 14, 17, 7, 11, 3, 8, 12, 5, 0, 1, 9, 6, 10, 4, 2];
     
     function Rotate(arr) {
         arr.push(arr.shift());
@@ -67,7 +67,7 @@ function encode(rotor,stcode,input){
             let r1 = rotor_box[2].indexOf(reflect_pos);
             let r2 = rotor_box[1].indexOf(r1);
             let r3 =rotor_box[0].indexOf(r2);
-            let final = String.fromCharCode(r3+65);
+            let final = String.fromCharCode(65 +r3);
             //console.log(r1,r2,r3,final);
             output = output+final;
             shift_coil();
