@@ -1,9 +1,9 @@
 body{
     height: 100vh;
-    margin: 0;
+    margin: auto;
     background-image: url(https://i.pinimg.com/originals/53/2c/e3/532ce34dd775739cf7c1d2de61a63da4.jpg);
-
-    background-size: auto;
+    background-color: #1f1f47;
+    background-size:auto;
     background-position: center;
     background-repeat: no-repeat;
     color: rgb(54, 53, 53);
@@ -71,7 +71,7 @@ input{
     text-align: center;
 }
 .total{
-    height: 100vh;
+    margin: auto;
 }
 .mainbody{
     background-color: rgb(255, 255, 255, 0.1);
@@ -95,4 +95,49 @@ input{
 }
 h3{
     text-decoration: underline;
+}
+
+.blob {
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    background-image: url('hitler.png');
+    animation: move 1s infinite linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    right: 0rem;
+    top: 50%;
+}
+.blob2 {
+    position:absolute;
+    width: 20rem;
+    height: 11rem;
+    background-image: url('naziflag.png');
+    animation: move1 1s infinite linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+
+@keyframes move {
+    0%{opacity: 0;}
+    50%{opacity: .5;}
+    100%{opacity: 1;}
+}
+@keyframes move1 {
+    0%{opacity: 0;}
+    50%{opacity: .5;}
+    100%{opacity: 1;}
 }
