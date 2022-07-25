@@ -1,5 +1,6 @@
 body{
-    height: 100vh;
+    height: 100%;
+    width: 100%;
     margin: auto;
     background-image: url(https://i.pinimg.com/originals/53/2c/e3/532ce34dd775739cf7c1d2de61a63da4.jpg);
     -webkit-background-color: #1f1f47;
@@ -94,17 +95,13 @@ input{
 ::placeholder{
     color: black;
 }
-h3{
+h3,h2{
     text-decoration: underline;
 }
 
 .anim1 {
-    position: absolute;
-    width: 20rem;
-    height: 20rem;
-    background-image: url('hitler.png');
-    animation: move 1s infinite linear;
-    -webkit-animation: move 1s infinite linear;
+    animation: move 5s infinite linear;
+    -webkit-animation: move 5s infinite linear;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -117,10 +114,6 @@ h3{
     top: 50%;
 }
 .anim2 {
-    position:absolute;
-    width: 20rem;
-    height: 11rem;
-    background-image: url('naziflag.png');
     animation: move1 1s infinite linear;
     -webkit-animation:move1 1s infinite linear;
     display: flex;
@@ -143,4 +136,14 @@ h3{
     0%{opacity: 0;}
     50%{opacity: .5;}
     100%{opacity: 1;}
+}
+.heading{
+    display: flex;
+    gap: 2rem;
+}
+.heading img{
+    width: 3rem;
+}
+.top img{
+    width: 4rem;
 }
