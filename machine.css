@@ -2,6 +2,7 @@ body{
     height: 100vh;
     margin: auto;
     background-image: url(https://i.pinimg.com/originals/53/2c/e3/532ce34dd775739cf7c1d2de61a63da4.jpg);
+    -webkit-background-color: #1f1f47;
     background-color: #1f1f47;
     background-size:auto;
     background-position: center;
@@ -103,6 +104,7 @@ h3{
     height: 20rem;
     background-image: url('hitler.png');
     animation: move 1s infinite linear;
+    -webkit-animation: move 1s infinite linear;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -120,6 +122,7 @@ h3{
     height: 11rem;
     background-image: url('naziflag.png');
     animation: move1 1s infinite linear;
+    -webkit-animation:move1 1s infinite linear;
     display: flex;
     align-items: center;
     justify-content: center;
