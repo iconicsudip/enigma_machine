@@ -98,7 +98,7 @@ h3{
     text-decoration: underline;
 }
 
-.blob {
+.anim1 {
     position: absolute;
     width: 20rem;
     height: 20rem;
@@ -116,7 +116,7 @@ h3{
     right: 0rem;
     top: 50%;
 }
-.blob2 {
+.anim2 {
     position:absolute;
     width: 20rem;
     height: 11rem;
