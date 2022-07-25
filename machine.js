@@ -16,11 +16,11 @@ function runfunc(){
 }
 function encode(rotor,stcode,input){
     let output="";
-    let rotor_i=[21, 5, 9, 18, 14, 11, 0, 15, 23, 3, 1, 16, 22, 20, 17, 7, 4, 6, 8, 25, 13, 10, 24, 19, 2, 12];
-    let rotor_ii=[23, 8, 14, 17, 25, 2, 15, 11, 22, 16, 10, 9, 12, 21, 3, 19, 6, 13, 5, 4, 18, 1, 24, 20, 7, 0];
-    let rotor_iii=[3, 19, 13, 24, 20, 15, 10, 18, 12, 7, 17, 8, 22, 23, 21, 6, 14, 4, 5, 0, 11, 1, 16, 2, 25, 9];
+    let rotor_i=[15, 10, 7, 4, 11, 3, 20, 23, 13, 0, 17, 21, 5, 8, 25, 1, 19, 22, 14, 6, 18, 24, 16, 2, 9, 12];
+    let rotor_ii=[4, 1, 11, 9, 10, 6, 0, 12, 14, 17, 19, 5, 23, 25, 15, 24, 20, 7, 21, 18, 22, 8, 2, 3, 13, 16];
+    let rotor_iii=[11, 22, 25, 6, 13, 3, 10, 14, 8, 16, 24, 12, 18, 23, 0, 21, 20, 15, 19, 2, 4, 7, 1, 9, 5, 17];
     const rotor_box=[rotor_i,rotor_ii,rotor_iii];
-    let reflector=[19, 20, 25, 15, 24, 18, 22, 13, 16, 21, 23, 14, 17, 7, 11, 3, 8, 12, 5, 0, 1, 9, 6, 10, 4, 2];
+    let reflector=[21, 13, 22, 19, 18, 20, 15, 14, 16, 23, 17, 24, 25, 1, 7, 6, 8, 10, 4, 3, 5, 0, 2, 9, 11, 12];
     
     function Rotate(arr) {
         arr.push(arr.shift());
@@ -51,7 +51,7 @@ function encode(rotor,stcode,input){
         }
     }
     //console.log(rotor_box);
-    final_rotor = [];
+    let unspace= [];
     for(let i=0;i<3;i++){
         rotor_box[i]=shift_pos(toascii(stcode[i]),rotor_box[i]);
     }
@@ -72,7 +72,8 @@ function encode(rotor,stcode,input){
             output = output+final;
             shift_coil();
         }else{
-            output=output+" ";
+            output=output+input[i];
+            console.log(output);
         }
     }
     return output;

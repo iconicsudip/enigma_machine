@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="machine.css">
+</head>
+<body>
+    <div class="total">
+        <div class="mainbody">
+            <div class="inputpart">
+                <div class="rotor">
+                    <h3>Rotor</h3>
+                    <input id="rotor" maxlength="3" placeholder="default value 123" type="text" oninput="runfunc()" required>
+                    <span>3 digits number required. range = 000 to 999</span>
+                </div>
+                <div class="stcode">
+                    <h3>Code</h3>
+                    <input id="stcode" maxlength="3" placeholder="default value ABC" type="text" oninput="runfunc()" required>
+                    <span>3 digits alphabets required. range = AAA to ZZZ</span>
+                </div>
+            </div>
+            <div class="textpart">
+                <div class="text">
+                    <h3>Input</h3>
+                    <textarea name="" id="text" cols="30" rows="10" oninput="runfunc()"></textarea>
+                </div>
+                <div class="output">
+                    <h3>Chypher Text</h3>
+                    <textarea name="" id="output" cols="30" rows="10" disabled></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="machine.js"></script>
+</body>
+</html>
