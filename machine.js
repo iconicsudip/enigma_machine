@@ -92,3 +92,24 @@ function shift_pos(ch,arr) {
     }
     return arr;
 }
+
+
+function setcache(){
+    localStorage.setItem("cache","true")
+}
+
+function checkcache(){
+    if(localStorage.getItem("cache")==="true"){
+        document.getElementsByClassName('popup')[0].style.display = 'none';
+    }
+}
+//pop up
+function closepopup(){
+    var valid = document.getElementById('cache').checked;
+    if(valid==true){
+        setcache();
+        document.getElementsByClassName('popup')[0].style.display = 'none';
+    }else{
+        document.getElementsByClassName('popup')[0].style.display = 'none';
+    }
+}

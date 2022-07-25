@@ -7,8 +7,37 @@
     <title>Enigma Machine</title>
     <link rel="stylesheet" href="machine.css">
 </head>
-<body>
-    
+<body onload="checkcache()">
+    <div class="popup">
+        <h2>Instructions</h2>
+        
+        <h4><strong>Note : Always remember the rotor code and key code while you are encrypting for decryption</strong></h4>
+        <div class="instructions">
+            <h3>Encryption</h3>
+            <li>
+                Firstly give three digits of number and range must be (000 to 999).
+            </li>
+            <li>
+                Secondly give three digits of alphabet and range must be (AAA to ZZZ).
+            </li>
+            <li>
+                Then you can type anything and get the encrypted output.
+            </li>
+            <h3>Decryption</h3>
+            <li>
+                Firstly type the same rotor code and key code again whatever you have choosen for encryption.
+            </li>
+            <li>
+                Secondly type or paste the encrypted sentences or words
+            </li>
+            <li>
+                Then finally you can retrieve the actual data.
+            </li>
+            <span>Click check box to not to show popup</span>
+            <input type="checkbox" name="" id="cache">
+            <button onclick="closepopup()"><strong>Close</strong></button>
+        </div>
+    </div>
     
     <div class="total">
         <div class="mainbody">
