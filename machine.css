@@ -100,6 +100,9 @@ h3,h2{
 }
 
 .anim1 {
+    background-size: cover;
+    background-position: center;
+    background-image: url(naziflag.png);
     animation: move 5s infinite linear;
     -webkit-animation: move 5s infinite linear;
     display: flex;
